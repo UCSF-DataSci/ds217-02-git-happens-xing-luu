@@ -1,5 +1,7 @@
 #!/bin/bash
 
+chmod +x setup_project.sh
+
 # Simple data processing script
 
 echo "Setting up project, make directories"
@@ -22,4 +24,24 @@ EOF
 
 cat data/students.csv
 
-chmod +x setup_project.sh
+#Make the data_analysis.py file
+cat > src/data_analysis.py  << 'EOF'
+# write some code  
+
+EOF 
+
+cat src/data_analysis.py
+
+#Make the data_analysis_functions.py file
+cat > src/data_analysis_functions.py  << 'EOF'
+# write some more code  
+
+EOF 
+cat src/data_analysis_functions.py
+
+cat > output/  << 'EOF'
+# write some more code  
+
+EOF 
+
+cat output/gitignore.py

@@ -8,7 +8,7 @@ mkdir -p src data output
 echo "create files using \"here-documents\""
 # Create files using "here-documents"
 
-cat > data/sample.csv << 'EOF'
+cat > data/students.csv << 'EOF'
 name,age,grade, subject 
 1. Alice,20,5, science
 2. Bob,19,6, math 
@@ -20,5 +20,6 @@ name,age,grade, subject
 8. ulrich, 22, 6, math
 EOF
 
+cat data/students.csv
 
-cat data/sample.csv
+chmod +x setup_project.sh

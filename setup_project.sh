@@ -4,11 +4,15 @@ chmod +x setup_project.sh
 
 # Simple data processing script
 
-echo "Setting up project, make directories"
+# make the directories 
 mkdir -p src data output 
+echo "Created directories: src, data, output"
 
-echo "create files using \"here-documents\""
-# Create files using "here-documents"
+# make the files .gitignore, requirements.txt
+touch .gitignore requirements.txt 
+echo "Created files: .gitignore, requirements.txt"
+
+# Create files using "here-documents", EOF starts a here document
 
 cat > data/students.csv << 'EOF'
 name,age,grade, subject 
@@ -24,24 +28,16 @@ EOF
 
 cat data/students.csv
 
+echo "Created data file: data/students.csv"
+
 #Make the data_analysis.py file
-cat > src/data_analysis.py  << 'EOF'
-# write some code  
-
-EOF 
-
-cat src/data_analysis.py
+cat > src/data_analysis.py << 'EOF'
+# TODO: Analysis of data
+EOF
 
 #Make the data_analysis_functions.py file
-cat > src/data_analysis_functions.py  << 'EOF'
-# write some more code  
+cat > src/data_analysis_functions.py << 'EOF'
+# TODO: Data analysis functions
+EOF
 
-EOF 
-cat src/data_analysis_functions.py
-
-cat > output/  << 'EOF'
-# write some more code  
-
-EOF 
-
-cat output/gitignore.py
+echo "Project scaffold created successfully."

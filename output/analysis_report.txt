@@ -1,0 +1,3 @@
+Total Students: 8
+Average Grade: 5.1
+Number of Math Students: 3

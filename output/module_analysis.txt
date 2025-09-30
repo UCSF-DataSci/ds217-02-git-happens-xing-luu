@@ -1,0 +1,16 @@
+Total Students: 8
+Average Grade: 5.1
+Highest Grade: 6
+Lowest Grade: 4
+
+Students by Subject:
+  Science: 3
+  Math: 3
+  History: 2
+
+Grade Distribution:
+  A (90-100): 0 (0.0%)
+  B (80-89): 0 (0.0%)
+  C (70-79): 0 (0.0%)
+  D (60-69): 0 (0.0%)
+  F (0-59): 8 (100.0%)
